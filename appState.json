@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d9f96991-f052-4d56-b9dc-a2785a916b91": {
+        "id": "d9f96991-f052-4d56-b9dc-a2785a916b91",
+        "parent": null,
+        "name": "indunilLondon",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "23761d33-d28e-43ab-bb52-5ffa93ef8aae"
+        ],
+        "isRemovable": false,
+        "filePath": "indunilLondon"
+      },
+      "23761d33-d28e-43ab-bb52-5ffa93ef8aae": {
+        "id": "23761d33-d28e-43ab-bb52-5ffa93ef8aae",
+        "parent": "d9f96991-f052-4d56-b9dc-a2785a916b91",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "indunilLondon/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest2Londonindunilqatsthead",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "d9f96991-f052-4d56-b9dc-a2785a916b91",
+    "openFiles": [
+      "23761d33-d28e-43ab-bb52-5ffa93ef8aae"
+    ],
+    "currentFileId": "23761d33-d28e-43ab-bb52-5ffa93ef8aae",
+    "resources": {
+      "apigeuWest2Londonindunilqatsthead": {
+        "name": "apigeuWest2Londonindunilqatsthead",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 0,
+          "apiName": "London",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "HEAD",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "qa",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "indunilLondon",
+    "projectDescription": "indunilLondon",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561377003949
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "indunilLondon",
+      "url": "https://github.com/Indunil1992/indunilLondon"
+    }
+  }
+}
