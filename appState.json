@@ -60,7 +60,7 @@
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 0,
-          "stageName": "qa",
+          "stageName": "test",
           "mode": 0
         }
       }
@@ -90,7 +90,7 @@
     "projectRegion": "eu-west-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561377003949
+    "lastSave": 1561377165160
   },
   "VCS_STATE": {
     "provider": "GitHub",
