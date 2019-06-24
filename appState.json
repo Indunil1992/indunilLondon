@@ -32,7 +32,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigeuWest2Londonindunilqatsthead",
+            "resourceName": "apigeuWest2Londonindunilqatstget",
             "config": {}
           }
         ]
@@ -57,6 +57,25 @@
           "resourceName": "indunil/qa/tst",
           "resourcePath": "/indunil/qa/tst",
           "restMethod": "HEAD",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      },
+      "apigeuWest2Londonindunilqatstget": {
+        "name": "apigeuWest2Londonindunilqatstget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 0,
+          "apiName": "London",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "GET",
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 0,
@@ -90,7 +109,7 @@
     "projectRegion": "eu-west-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561377165160
+    "lastSave": 1561377543094
   },
   "VCS_STATE": {
     "provider": "GitHub",
