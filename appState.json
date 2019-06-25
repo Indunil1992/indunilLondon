@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "indunilLondon/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) \n\n\n{\n\n\n\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -33,6 +33,10 @@
         "triggers": [
           {
             "resourceName": "apigeuWest2Londonindunilqatstget",
+            "config": {}
+          },
+          {
+            "resourceName": "apigeuWest2Londonindunilqatstany",
             "config": {}
           }
         ]
@@ -82,6 +86,25 @@
           "stageName": "test",
           "mode": 0
         }
+      },
+      "apigeuWest2Londonindunilqatstany": {
+        "name": "apigeuWest2Londonindunilqatstany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 0,
+          "apiName": "London",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
       }
     },
     "customTemplate": {
@@ -109,7 +132,7 @@
     "projectRegion": "eu-west-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561377543094
+    "lastSave": 1561452893033
   },
   "VCS_STATE": {
     "provider": "GitHub",
